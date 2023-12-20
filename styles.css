@@ -1,0 +1,192 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica";
+}
+header{
+    /* border:2px solid red; */
+    background-color: rgba(0, 0, 0, 0);
+    color:white;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+}
+header .netflix-logo{
+    height: 80px;
+    width:171px;    
+    background-image: url("/NetflixHomeAlike/netflix\ logo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* border: 2px solid yellow; */
+}
+nav{
+    /* border:2px solid red; */
+    display: flex;
+    padding: 1vw;
+    gap:25px;
+    position: relative;
+
+}
+nav .globe-icon{
+    position: absolute;
+    top: 26.8px;
+    left: 20px;
+    height: 20px;
+    width:20px;
+    background-image: url("/NetflixHomeAlike/globe\ n1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+nav select{
+    background-color: rgba(0, 0, 0, 0.631);
+    color:white;
+    padding: 5px 5px 5px 30px;
+    border: 1.5px solid #585858;
+    border-radius: 5px;
+    font-size: 18px;
+    height: 3vw;
+    width:9vw;
+    
+}
+
+nav select option{
+    font-size: 18px;
+}
+nav button{
+    height: 3vw;
+    width:9vw;
+    background-color: #e50914;
+    border:none;
+    font-size: 18px;
+    color:white;
+    text-transform: capitalize;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+nav button:hover{
+    background-color: #c70711;
+}
+
+.homepage{
+    /* height: 600px; */
+    background-image: linear-gradient(to top,rgba(0, 0, 0, 0.584),rgba(0, 0, 0, 0.486)),url("https://assets.nflxext.com/ffe/siteui/vlv3/bff5732c-7d13-45d1-9fab-476db25a1827/46bc87cd-4c4c-4485-8b93-d5f21c581d56/IN-en-20230710-popsignuptwoweeks-perspective_alpha_website_small.jpg");
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    gap:2vw;
+    padding: 15vw 0;
+    border-bottom: 8px solid #585858;
+    
+}
+
+.homepage h1{
+    font-size: 3.5vw;
+    font-weight: 900;
+    
+}
+.homepage h3{
+    font-size: 2vw;
+    
+}
+.homepage p{
+    font-size: 1.8vw;
+}
+.homepage form{
+    /* border: 2px solid yellow; */
+    width:45%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.homepage form input{
+    width:65%;
+    background-color: rgba(0, 0, 0, 0.662);
+    color:white;
+    border: none;
+    padding: 15px;
+    border: 1.5px solid #585858;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+    
+}
+.homepage button{
+    width:32%;
+    background-color: #e50914;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    font-size: 22px;
+    font-weight: 600;
+}
+.homepage input:hover{
+    outline:2px solid white;
+}
+.homepage button:hover{
+    background-color: #c70711;
+}
+
+.netflix-tv{
+    /* border:2px solid yellow; */
+    display: flex;
+    gap:3vw;
+    padding: 4vw 2vw;
+    background-color: black;
+    color:white;
+    border-bottom: 8px solid #585858;
+    flex-wrap: wrap;
+    
+    
+}
+.netflix-tv article:first-of-type{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:2vw;
+    width:40vw;
+}
+.netflix-tv article:first-of-type h1{
+    font-size: 3.5vw;
+    font-weight: 900;
+}
+.netflix-tv article:first-of-type p{
+    font-size: 1.8vw;
+}
+.netflix-tv article:last-of-type{
+    /* border:2px solid green; */
+    width:50vw;
+    height: 33vw;
+    position: relative;
+    overflow: hidden;
+   
+
+}
+.netflix-tv article:last-of-type .tv-img{
+    height: 100%;
+    width:100%;
+    background-image: url("https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+.netflix-tv article:last-of-type video{
+    width: 90%;
+    height: 100%;
+    position: relative;
+    left:48px;
+}
+
